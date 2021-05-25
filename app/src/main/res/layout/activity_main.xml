@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_marginHorizontal="10sp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BlackJack"
+        android:gravity="center"
+        android:textSize="40sp"/>
+    <!-- Grupo de cartas de la Mesa -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mesa"
+        android:gravity="center"
+        android:textSize="10sp"/>
+    <LinearLayout
+        android:id="@+id/llayCartasMesa"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <com.dupontandre.blackjack.views.CartaView
+            android:id="@+id/cviMesaCarta1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="3sp" />
+        <com.dupontandre.blackjack.views.CartaView
+            android:id="@+id/cviMesaCarta2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="3sp" />
+        <com.dupontandre.blackjack.views.CartaView
+            android:id="@+id/cviMesaCarta3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="3sp" />
+        <com.dupontandre.blackjack.views.CartaView
+            android:id="@+id/cviMesaCarta4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="3sp" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jugador"
+        android:gravity="center"
+        android:textSize="10sp"/>
+    <!-- Grupo de cartas del Jugador -->
+    <LinearLayout
+        android:id="@+id/llayCartasJugador"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <com.dupontandre.blackjack.views.CartaView
+            android:id="@+id/cviJugadorCarta1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="3sp" />
+        <com.dupontandre.blackjack.views.CartaView
+            android:id="@+id/cviJugadorCarta2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="3sp" />
+        <com.dupontandre.blackjack.views.CartaView
+            android:id="@+id/cviJugadorCarta3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="3sp" />
+        <com.dupontandre.blackjack.views.CartaView
+            android:id="@+id/cviJugadorCarta4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="3sp" />
+    </LinearLayout>
+    <!-- Grupo de Botones del BlackJack -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="30sp">
+        <!-- Consola del BlackJack -->
+        <TextView
+            android:id="@+id/tviResultados"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Resultados"
+            android:textSize="10sp"/>
+        <LinearLayout
+            android:id="@+id/llayBotonesBlackJack"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:paddingTop="10sp">
+            <Button
+                android:id="@+id/butQuedar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Quedar"
+                android:layout_marginRight="5sp"/>
+            <Button
+                android:id="@+id/butReiniciar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Reiniciar" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
